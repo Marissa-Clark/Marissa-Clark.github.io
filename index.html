@@ -36,39 +36,33 @@
   <section class="hero wrap">
     <div class="hero-text">
       <p class="eyebrow">Senior Data Scientist · Chicago</p>
-      <h1>Turning ambiguous questions into <em>decisions people act on.</em></h1>
+      <div class="hero-head">
+        <img src="images/headshot.jpg" alt="Portrait of Marissa Clark" class="portrait" width="900" height="1196">
+        <h1>Turning ambiguous questions into <em>decisions people act on.</em></h1>
+      </div>
       <p class="lede">I'm a cognitive scientist turned data scientist. I build ML ranking models, prescriptive optimization, and causal analyses, then work across teams to turn the results into strategy.</p>
       <div class="hero-actions">
         <a class="btn btn-gold" href="#contact">Get in touch</a>
-        <a class="btn btn-ghost" href="images/MarissaClarkResume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+        <a class="btn btn-ghost" href="images/MarissaClarkResume.pdf" target="_blank" rel="noopener">Resume ↗</a>
       </div>
-    </div>
-    <div class="hero-target" aria-hidden="true">
-      <svg class="rings" viewBox="0 0 400 400">
-        <circle cx="200" cy="200" r="196" class="ring ring-white"/>
-        <circle cx="200" cy="200" r="160" class="ring ring-black"/>
-        <circle cx="200" cy="200" r="124" class="ring ring-blue"/>
-        <circle cx="200" cy="200" r="88"  class="ring ring-red"/>
-        <line x1="200" y1="0" x2="200" y2="30" class="tick"/><line x1="200" y1="370" x2="200" y2="400" class="tick"/>
-        <line x1="0" y1="200" x2="30" y2="200" class="tick"/><line x1="370" y1="200" x2="400" y2="200" class="tick"/>
-      </svg>
-      <img src="images/headshot.jpg" alt="Portrait of Marissa Clark" class="portrait" width="900" height="1196">
     </div>
   </section>
 
   <!-- ───────────── Impact tiles ───────────── -->
+  <!-- Hidden for now — uncomment to restore
   <section class="wrap stats" aria-label="Selected impact">
     <div class="stat"><span class="stat-num">$8M</span><span class="stat-label">projected revenue from a credit card offer optimization model</span></div>
     <div class="stat"><span class="stat-num">12M+</span><span class="stat-label">loyalty members targeted by an ML ranking model</span></div>
     <div class="stat"><span class="stat-num">$10M+</span><span class="stat-label">partnership agreements informed by clean room analytics</span></div>
     <div class="stat"><span class="stat-num">$3.3M</span><span class="stat-label">forecasted incremental sales from trade promotion optimization</span></div>
   </section>
+  -->
 
   <!-- ───────────── About ───────────── -->
   <section id="about" class="wrap section">
     <div class="section-head">
       <span class="kicker">01 — About</span>
-      <h2>From the brain to the business</h2>
+      <h2>Brain → Business</h2>
     </div>
     <div class="about-grid">
       <div class="prose">
@@ -96,7 +90,6 @@
     <div class="section-head">
       <span class="kicker">02 — Experience</span>
       <h2>Where I've worked</h2>
-      <p class="section-sub">The short version. The <a href="images/MarissaClarkResume.pdf" target="_blank" rel="noopener">résumé</a> has the numbers.</p>
     </div>
 
     <ol class="timeline">
@@ -120,16 +113,26 @@
         <div class="role-meta"><span class="years">2021 — 2022</span></div>
         <div class="role-body">
           <h3>Data Scientist <span class="at">Home Chef</span></h3>
-          <p>At this meal-kit subscription business I measured what marketing actually drove and forecast demand, so less food went to waste.</p>
-          <div class="tags"><span>TV Attribution</span><span>Customer LTV</span><span>Forecasting</span><span>NLP</span></div>
+          <p>At this meal-kit subscription business I measured what marketing actually drove and forecast demand, so less food went to waste. For TV attribution, I used Fourier analysis to separate daily and hourly ordering rhythms from the lift an ad actually caused, and those results shaped channel budgets. I also built a customer lifetime value model for budgeting and lifecycle marketing, meal-kit sales forecasting, and an NLP pipeline that sorted customer feedback so the team could spot new trends early.</p>
+          <div class="tags"><span>TV Attribution</span><span>Fourier Analysis</span><span>Customer LTV</span><span>Forecasting</span><span>NLP</span><span>Snowflake</span></div>
         </div>
       </li>
       <li class="role">
         <div class="role-meta"><span class="years">2018 — 2021</span></div>
         <div class="role-body">
           <h3>PhD Researcher <span class="at">Dartmouth College</span></h3>
-          <p>In the Computational Social and Affective Neuroscience Lab (PI Luke Chang), I studied how the brain represents emotional experiences as they unfold in natural settings. I also managed a $3.5M research grant.</p>
-          <div class="tags"><span>fMRI</span><span>Shared Response Model</span><span>Factor Analysis</span><span>Python &amp; R</span></div>
+          <p>In the Computational Social and Affective Neuroscience Lab (PI Luke Chang), I studied how the brain represents emotional experiences as they unfold in natural settings. My research used autobiographical videos to evoke a wide range of emotions and mapped how each person's feelings shifted, both in their own ratings and in their brains. I also managed the $3.5M grant that funded this research.</p>
+          <div class="tags"><span>fMRI</span><span>Collaborative Filtering</span><span>Shared Response Model</span><span>Factor Analysis</span><span>Python &amp; R</span></div>
+          <a class="video-card" href="https://www.youtube.com/watch?v=dzu6qfYPRGc" target="_blank" rel="noopener">
+            <span class="video-thumb">
+              <img src="https://img.youtube.com/vi/dzu6qfYPRGc/hqdefault.jpg" alt="" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span class="video-text">
+              <span class="pub-venue">Watch · YouTube</span>
+              <span class="video-title">Research presentation: brain representations of unique emotional experiences</span>
+            </span>
+          </a>
         </div>
       </li>
       <li class="role">
@@ -176,7 +179,7 @@
         <p>In a study across four middle schools (n = 857), a norms-based intervention increased students' motivation to empathize. Higher motivation was linked to more prosocial behavior and to less loneliness and aggression.</p>
       </article>
       <article class="card pub">
-        <p class="pub-venue">Dissertation research · Dartmouth</p>
+        <p class="pub-venue">Research · Dartmouth</p>
         <h3>Brain Representations of Unique Emotional Experiences</h3>
         <p>We used autobiographical videos to evoke a wide range of emotions and modeled each person's emotional path with collaborative filtering. On average, 7 dimensions explained 90% of the variance in ratings, more than the 2–5 found in earlier work. A shared response model found a common neural signal for changes in emotion in the default mode network.</p>
       </article>
@@ -201,11 +204,39 @@
             <circle cx="56" cy="63" r="2.4" class="hit"/><circle cx="64" cy="57" r="2.4" class="hit"/><circle cx="61" cy="66" r="2.4" class="hit"/><circle cx="72" cy="50" r="2.4" class="hit"/>
           </svg>
         </div>
-        <div>
+        <div class="project-main">
           <p class="pub-venue">Kotlin · Jetpack Compose · Wear OS</p>
           <h3><a href="https://github.com/Marissa-Clark/ArrowWatch" target="_blank" rel="noopener">ArrowWatch ↗</a></h3>
-          <p>An archery scoring app for my watch and phone. I log each arrow from my wrist at the range, then the phone app shows session history and analytics on my shooting. It's a small data product: I'm the only user, but it's still collect, clean, and analyze.</p>
-          <div class="tags"><span>Android</span><span>Wear OS</span><span>Analytics</span></div>
+          <p>A Wear OS watch app and Android phone app I built to track my archery. I score arrows from my wrist at the range, and while I shoot, the watch records motion and heart rate. The phone app then finds each shot in the sensor data, so I can see how steady my draw was and how my heart rate moved alongside my scores.</p>
+          <div class="tags"><span>Android</span><span>Wear OS</span><span>Sensor Data</span><span>Signal Processing</span><span>Analytics</span></div>
+
+          <div class="folds">
+            <details>
+              <summary>On the watch</summary>
+              <p>Start a session, choose arrows per round, and shoot. After each round, tap each arrow's ring color (gold, red, blue, black, white, or miss) or enter an exact total. The whole time, the watch logs orientation, gravity, steps, and heart rate. It streams each shot and score to the phone as they happen.</p>
+              <!-- Watch screenshots go here (images/arrowwatch/) -->
+            </details>
+            <details>
+              <summary>Finding shots in the sensor data</summary>
+              <p>The analytics come from the raw sensor log. To find shots, the app removes slow drift from the arm-angle signal with a 60-second rolling median. Then it looks for stretches where the arm holds unusually still, which marks a draw-and-hold, and merges and filters those stretches into individual shots. Steps show when I walk downrange to pull arrows, and those walks split the session into rounds.</p>
+              <div class="gallery gallery-single">
+                <figure class="shot"><a href="images/arrowwatch/shots.jpg" target="_blank" rel="noopener"><img src="images/arrowwatch/shots.jpg" alt="ArrowWatch: Heart rate and arm position for one round, with detected shots marked" loading="lazy"></a><figcaption>Heart rate and arm position for one round, with detected shots marked</figcaption></figure>
+              </div>
+            </details>
+            <details>
+              <summary>What the phone shows</summary>
+              <p>A live scoring view during the session, then a history of every session with its ring-color breakdown and per-round scores. Each round opens into sensor charts: hold time, arm stability during the hold, and heart rate at each shot, plotted against my average score per arrow.</p>
+              <div class="gallery">
+                <figure class="shot"><a href="images/arrowwatch/trends.jpg" target="_blank" rel="noopener"><img src="images/arrowwatch/trends.jpg" alt="ArrowWatch: Score and hold-time trends across sessions" loading="lazy"></a><figcaption>Score and hold-time trends across sessions</figcaption></figure>
+                <figure class="shot"><a href="images/arrowwatch/session.jpg" target="_blank" rel="noopener"><img src="images/arrowwatch/session.jpg" alt="ArrowWatch: Session overview with per-round scores, HR, and hold" loading="lazy"></a><figcaption>Session overview with per-round scores, HR, and hold</figcaption></figure>
+                <figure class="shot"><a href="images/arrowwatch/scatter.jpg" target="_blank" rel="noopener"><img src="images/arrowwatch/scatter.jpg" alt="ArrowWatch: Hold time and heart rate vs. score, per round" loading="lazy"></a><figcaption>Hold time and heart rate vs. score, per round</figcaption></figure>
+              </div>
+            </details>
+            <details>
+              <summary>Why I built it</summary>
+              <p>I wanted to know whether my good rounds and bad rounds looked different in ways I couldn't feel. It's the same loop I run at work (instrument, clean, model, and look for signal), just with arrows.</p>
+            </details>
+          </div>
         </div>
       </article>
       <article class="card project">
@@ -250,7 +281,7 @@
       <li><a href="mailto:marissadclark@gmail.com"><span>Email</span>marissadclark@gmail.com</a></li>
       <li><a href="https://www.linkedin.com/in/marissa-d-clark" target="_blank" rel="noopener"><span>LinkedIn</span>in/marissa-d-clark</a></li>
       <li><a href="https://github.com/Marissa-Clark" target="_blank" rel="noopener"><span>GitHub</span>Marissa-Clark</a></li>
-      <li><a href="images/MarissaClarkResume.pdf" target="_blank" rel="noopener"><span>Résumé</span>Download PDF</a></li>
+      <li><a href="images/MarissaClarkResume.pdf" target="_blank" rel="noopener"><span>Resume</span>Download PDF</a></li>
     </ul>
   </div>
   <p class="wrap copyright">© <span id="yr">2026</span> Marissa Clark</p>
