@@ -93,12 +93,6 @@ p { margin: 0 0 1em; }
   box-shadow: 0 16px 40px rgba(0,0,0,.4);
 }
 
-/* target-face ring colors (ArrowWatch icon) */
-.ring { fill: none; stroke-width: 1.5; }
-.ring-white { stroke: rgba(241,245,249,.22); }
-.ring-black { stroke: rgba(148,163,184,.28); }
-.ring-blue  { stroke: rgba(47,111,176,.7); }
-.ring-red   { stroke: rgba(194,65,58,.7); }
 
 
 /* ── Stat tiles (ArrowWatch analytics feel) ─────────────────── */
@@ -196,12 +190,6 @@ ul.arrows li::after {
   grid-column: 1 / -1; flex-direction: row; gap: 36px; align-items: flex-start;
   background: linear-gradient(135deg, var(--surface) 0%, var(--surface-2) 100%);
 }
-.project-art { flex: 0 0 170px; }
-.project-art svg { width: 170px; height: 170px; }
-.project-art .ring { stroke-width: 2; }
-.project-art .ring-white { fill: rgba(241,245,249,.06); }
-.gold-fill { fill: var(--gold); }
-.hit { fill: var(--bg); stroke: var(--text); stroke-width: 1; }
 
 /* ── Video preview card ───────────────────────────────────── */
 .video-card {
@@ -298,3 +286,27 @@ ul.arrows li::after {
   .gallery { grid-template-columns: 1fr; margin-left: 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* ── LeafArt card ─────────────────────────────────────────── */
+.project.feature.leaf-card { flex-direction: column; align-items: stretch; gap: 24px; }
+.leaf-preview {
+  position: relative; width: 100%; aspect-ratio: 21 / 8; border-radius: 10px; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 40%, #1b1320, #07060a 75%); border: 1px solid var(--line);
+}
+.leaf-preview iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.leaf-open {
+  position: absolute; right: 12px; bottom: 12px; font-size: .78rem; font-weight: 500;
+  color: var(--text); background: rgba(15,23,42,.75); border: 1px solid rgba(224,178,82,.4);
+  padding: 5px 12px; border-radius: 999px; backdrop-filter: blur(6px);
+}
+.leaf-open:hover { color: var(--gold); }
+@media (max-width: 700px) { .leaf-preview { aspect-ratio: 4 / 3; } }
+.folds ul.fold-list { margin: -4px 0 16px 21px; }
+.folds ul.fold-list li { font-size: .93rem; padding-top: 7px; padding-bottom: 7px; }
+.folds ul.fold-list li::before { top: 17px; }
+.folds ul.fold-list li::after { top: 14px; }
+.folds ul.fold-list strong { color: var(--text); font-weight: 600; }
+.gallery-watch { grid-template-columns: repeat(3, minmax(0, 170px)); }
+.shot.watch a { border-radius: 50%; background: #000; border-color: var(--line); }
+.shot.watch figcaption { text-align: center; }
+@media (max-width: 700px) { .gallery-watch { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; } }

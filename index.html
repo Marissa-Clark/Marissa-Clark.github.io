@@ -40,7 +40,7 @@
         <img src="images/headshot.jpg" alt="Portrait of Marissa Clark" class="portrait" width="900" height="1196">
         <h1>Turning ambiguous questions into <em>decisions people act on.</em></h1>
       </div>
-      <p class="lede">I'm a cognitive scientist turned data scientist. I build ML ranking models, prescriptive optimization, and causal analyses, then work across teams to turn the results into strategy.</p>
+      <p class="lede">I'm a cognitive scientist turned data scientist. I build ML ranking models, prescriptive optimization, and causal analyses, then work across teams to turn the results into executable strategy.</p>
       <div class="hero-actions">
         <a class="btn btn-gold" href="#contact">Get in touch</a>
         <a class="btn btn-ghost" href="images/MarissaClarkResume.pdf" target="_blank" rel="noopener">Resume ↗</a>
@@ -67,7 +67,7 @@
     <div class="about-grid">
       <div class="prose">
         <p>I'm a Senior Data Scientist at <strong>United Airlines</strong>, where I work on MileagePlus loyalty, marketing, and partnerships. I build models that choose which members see which campaigns, which offers go to which customers, and how first- and third-party data fit together in clean rooms.</p>
-        <p>Before United, I led data science strategy at <strong>Kimberly-Clark</strong>, and before that I was a data scientist at <strong>Home Chef</strong>, working on TV attribution, customer lifetime value, and demand forecasting.</p>
+        <p>Before United, I was a data science strategy leader at <strong>Kimberly-Clark</strong>, and before that I was a data scientist at <strong>Home Chef</strong>, working on TV attribution, customer lifetime value, and demand forecasting.</p>
         <p>My path started in research. I studied the neuroscience of emotional experience as a PhD researcher at <strong>Dartmouth</strong>, after managing neuroimaging labs at <strong>Stanford</strong> and the <strong>University of Maryland</strong>. That background still shapes my work: careful experimental design, a healthy skepticism of easy answers, and a real interest in why people do what they do.</p>
         <p>Outside of work I'm usually out with my dog, in the woodshop, or at the archery range. I track my scores with an app I built myself (see <a href="#projects">Projects</a>).</p>
       </div>
@@ -194,16 +194,6 @@
     </div>
     <div class="projects">
       <article class="card project feature">
-        <div class="project-art" aria-hidden="true">
-          <svg viewBox="0 0 120 120">
-            <circle cx="60" cy="60" r="56" class="ring ring-white"/>
-            <circle cx="60" cy="60" r="44" class="ring ring-black"/>
-            <circle cx="60" cy="60" r="32" class="ring ring-blue"/>
-            <circle cx="60" cy="60" r="20" class="ring ring-red"/>
-            <circle cx="60" cy="60" r="9" class="gold-fill"/>
-            <circle cx="56" cy="63" r="2.4" class="hit"/><circle cx="64" cy="57" r="2.4" class="hit"/><circle cx="61" cy="66" r="2.4" class="hit"/><circle cx="72" cy="50" r="2.4" class="hit"/>
-          </svg>
-        </div>
         <div class="project-main">
           <p class="pub-venue">Kotlin · Jetpack Compose · Wear OS</p>
           <h3><a href="https://github.com/Marissa-Clark/ArrowWatch" target="_blank" rel="noopener">ArrowWatch ↗</a></h3>
@@ -214,7 +204,11 @@
             <details>
               <summary>On the watch</summary>
               <p>Start a session, choose arrows per round, and shoot. After each round, tap each arrow's ring color (gold, red, blue, black, white, or miss) or enter an exact total. The whole time, the watch logs orientation, gravity, steps, and heart rate. It streams each shot and score to the phone as they happen.</p>
-              <!-- Watch screenshots go here (images/arrowwatch/) -->
+              <div class="gallery gallery-watch">
+                <figure class="shot watch"><a href="images/arrowwatch/watch-start.jpg" target="_blank" rel="noopener"><img src="images/arrowwatch/watch-start.jpg" alt="ArrowWatch watch: Set arrows per round and start" loading="lazy"></a><figcaption>Set arrows per round and start</figcaption></figure>
+                <figure class="shot watch"><a href="images/arrowwatch/watch-end.jpg" target="_blank" rel="noopener"><img src="images/arrowwatch/watch-end.jpg" alt="ArrowWatch watch: Live round view: last and average score, heart rate" loading="lazy"></a><figcaption>Live round view: last and average score, heart rate</figcaption></figure>
+                <figure class="shot watch"><a href="images/arrowwatch/watch-complete.jpg" target="_blank" rel="noopener"><img src="images/arrowwatch/watch-complete.jpg" alt="ArrowWatch watch: Session summary" loading="lazy"></a><figcaption>Session summary</figcaption></figure>
+              </div>
             </details>
             <details>
               <summary>Finding shots in the sensor data</summary>
@@ -235,6 +229,40 @@
             <details>
               <summary>Why I built it</summary>
               <p>I wanted to know whether my good rounds and bad rounds looked different in ways I couldn't feel. It's the same loop I run at work (instrument, clean, model, and look for signal), just with arrows.</p>
+            </details>
+          </div>
+        </div>
+      </article>
+      <article class="card project feature leaf-card">
+        <div class="leaf-preview">
+          <iframe src="https://marissa-clark.com/LeafArt/?count=16&amp;hint=0&amp;size=0.8" title="Falling-leaf screensaver preview" loading="lazy" tabindex="-1"></iframe>
+          <a class="leaf-open" href="https://marissa-clark.com/LeafArt/" target="_blank" rel="noopener">Open full screen ↗</a>
+        </div>
+        <div class="project-main">
+          <p class="pub-venue">Python · OpenCV · Canvas</p>
+          <h3><a href="https://github.com/Marissa-Clark/LeafArt" target="_blank" rel="noopener">LeafArt ↗</a></h3>
+          <p>It started as a framed piece for my wall: a gradient of pressed fall leaves. I scanned them, then wrote a computer-vision pipeline that cuts each leaf out of the scans. The 339 leaves it produced power a falling-leaf screensaver (move your cursor over the preview to push the leaves).</p>
+          <div class="tags"><span>Computer Vision</span><span>OpenCV</span><span>Watershed</span><span>Canvas</span></div>
+
+          <div class="folds">
+            <details>
+              <summary>Where it started</summary>
+              <p>I collected about 500 fall leaves, pressed them, and arranged them by color into a framed gradient for my wall. I scanned the leaves along the way, and later used those scans for this project.</p>
+            </details>
+            <details>
+              <summary>Cutting leaves out of scans</summary>
+              <p>Each scanned page held many leaves. I needed every one as a clean, separate cutout, and doing that by hand wasn't realistic, so I built a pipeline and tuned each step:</p>
+              <ul class="arrows fold-list">
+                <li><strong>Finding leaves.</strong> I started with Otsu thresholding, then raised the cutoff after pale yellow leaves kept blending into the background.</li>
+                <li><strong>Removing stems.</strong> I removed stems by shape. A distance transform keeps only the thick body of each leaf, then grows it back out by the same radius, so thin stems never return.</li>
+                <li><strong>Cleaning edges.</strong> The scanner left a gray halo around each leaf, so I added a saturation and brightness filter to strip it.</li>
+                <li><strong>Catching overlaps.</strong> I wrote a triage step that flags cutouts containing more than one leaf. It checks for multiple "centers" in one shape and for deep notches where two leaves meet. It also drops any leaf cut off by the page edge.</li>
+                <li><strong>Splitting pairs.</strong> For flagged cutouts, I split the leaves with a watershed seeded at each leaf's center, falling back to a cut between clusters of notch points when that fails.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>The screensaver</summary>
+              <p>I built it as a single canvas page with no dependencies. Each leaf gets a random depth that controls its size, speed, and opacity, which gives a parallax effect. To fake a 3D flip, a leaf narrows as it rotates edge-on. A time-varying wind value pushes all leaves sideways, and cursor movement adds force to leaves near the pointer. I exported each leaf as a ~11 KB WebP and load them in the background, so the animation starts right away.</p>
             </details>
           </div>
         </div>
